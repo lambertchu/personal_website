@@ -136,10 +136,19 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              I was born and raised on Long Island, New York. I graduated from MIT in 2017 with
+              degrees in computer science and management science. While I was there, I pitched on
+              the varsity baseball team during my freshman year for a grand total of one inning (and
+              thankfully didn’t give up any runs). During my senior year, I co-founded Point with
+              two of my fraternity brothers. Our team built an NLP-powered product to help people
+              write emails faster. We were funded by investors like Y Combinator and Slow Ventures,
+              featured in Forbes, and reached #4 Product of the Day on Product Hunt. I subsequently
+              joined the front office of the New York Yankees as a member of the baseball operations
+              department. Now, I’m pursuing my interests in technology, business, and sports as a
+              data scientist for Lucky Trader, where we are building the sharpest analytics platform
+              for NFTs. So what do I write about on my personal blog? Anything that interests me! As
+              of now, expect to see content related to sports, technology, finance, and crypto. Feel
+              free to hit me up via DM on Twitter!
             </p>
 
             <p>
