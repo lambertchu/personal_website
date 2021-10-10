@@ -43,7 +43,7 @@ const TagsPage = ({
     <StyledTagsContainer>
       <span className="breadcrumb">
         <span className="arrow">&larr;</span>
-        <Link to="/blog">All memories</Link>
+        <Link to="/blog">All blog posts</Link>
       </span>
 
       <h1>Tags</h1>
