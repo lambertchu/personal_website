@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Layout } from '@components';
-import { IconBookmark } from '@components/icons';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const StyledMainContainer = styled.main`
   & > header {
@@ -163,15 +163,16 @@ const BlogPage = ({ location, data }) => {
           {posts.length > 0 &&
             posts.map(({ node }, i) => {
               const { frontmatter } = node;
-              const { title, description, slug, date, tags } = frontmatter;
+              const { title, description, slug, date, cover, tags } = frontmatter;
               const formattedDate = new Date(date).toLocaleDateString();
+              const image = getImage(cover);
 
               return (
                 <StyledPost key={i}>
                   <div className="post__inner">
                     <header>
                       <div className="post__icon">
-                        <IconBookmark />
+                        <GatsbyImage image={image} alt={title} className="img" />
                       </div>
                       <h5 className="post__title">
                         <Link to={slug}>{title}</Link>
@@ -223,6 +224,11 @@ export const pageQuery = graphql`
             date
             tags
             draft
+            cover {
+              childImageSharp {
+                gatsbyImageData(width: 700, formats: [AUTO, WEBP, AVIF])
+              }
+            }
           }
           html
         }

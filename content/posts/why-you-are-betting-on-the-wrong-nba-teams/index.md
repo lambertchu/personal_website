@@ -3,6 +3,7 @@ title: Why you are betting on the wrong NBA teams
 date: 2021-04-21
 draft: false
 slug: /blog/betting-nba
+cover: './giannis.jpg'
 tags:
   - NBA
   - Sports Betting
@@ -11,19 +12,19 @@ tags:
 
 You might be surprised to learn that the NBA teams that win the most games do NOT win bettors the most money!
 
-In this post, I will analyze NBA betting data and run simulations to show you why this has historically been true — and explain which teams you should bet on instead. You won’t even need basketball knowledge to successfully implement this strategy.
+In this post, I will analyze NBA betting data and run simulations to show you why this has historically been true — and explain which teams you should bet on instead. You won’t even need basketball knowledge to successfully implement this strategy.
 
 Although you don’t need to be an NBA expert, this post assumes you have some knowledge of sports betting concepts and terminology. If you aren’t familiar with them, check out this [short guide](https://www.actionnetwork.com/how-to-bet-on-sports/general/sports-betting-for-beginners-10-things-to-know) for a primer.
 
-### How accurate are betting odds?
+### How accurate are betting odds?
 
-Let’s start with the basics — when two NBA teams play each other, one team is considered more likely to win (the favorite) while the other more likely to lose (the underdog). If you were to place a [moneyline bet](https://www.actionnetwork.com/education/moneyline) on the underdog, you’d win more money than if you had bet on the favorite; after all, you deserve a bigger reward for picking the less likely winner. Based on the payouts set by the sportsbook, you can calculate the [implied probability](https://www.investopedia.com/articles/dictionary/042215/understand-math-behind-betting-odds-gambling.asp) of each team winning the game.
+Let’s start with the basics — when two NBA teams play each other, one team is considered more likely to win (the favorite) while the other more likely to lose (the underdog). If you were to place a [moneyline bet](https://www.actionnetwork.com/education/moneyline) on the underdog, you’d win more money than if you had bet on the favorite; after all, you deserve a bigger reward for picking the less likely winner. Based on the payouts set by the sportsbook, you can calculate the [implied probability](https://www.investopedia.com/articles/dictionary/042215/understand-math-behind-betting-odds-gambling.asp) of each team winning the game.
 
 In theory, the implied probability of winning your bet should be identical to the probability of your team winning the game. In reality, sportsbooks don’t set their odds that way. Instead, they invite action on both sides so the amount of money at stake is balanced, thus reducing their risk and maximizing their profit.
 
 For example, let’s say the Milwaukee Bucks (the team with the best record last year) are playing against the New York Knicks (a team with… _not_ the best record). If bettors rush to bet on the Bucks, the sportsbooks may get nervous about paying out a _lot_ of money if the Bucks win. So they decide to reduce their payout for the Bucks and increase their payout for the Knicks, thus incentivizing more money to be placed on the Knicks’ side.
 
-![](https://cdn-images-1.medium.com/max/800/1*xxSWsYfBwuOBFyZGoC0AaQ.jpeg)
+![](./giannis.jpg)
 
 Giannis Antetokounmpo, the star of the Milwaukee Bucks, possibly excited about winning a bet. Source: [Wikimedia.org](https://commons.wikimedia.org/wiki/File:Giannis_Antetokounmpo_%2824845003687%29_%28cropped%29.jpg)
 
@@ -31,7 +32,7 @@ These payouts could swing such that implied probability of a Bucks win is 90%, w
 
 Of course, the big challenge that all bettors face is finding the true win probability of each bet AND figuring it out before everyone else does. It’s impossible to know these win probabilities for certain, but can we find games where the implied odds are more likely to be inefficient? This could help us spot opportunities for value bets.
 
-### Step 1: Getting data
+### Step 1: Getting data
 
 First things first, we need a large dataset for our analysis. We’ll need data for the following:
 
@@ -40,7 +41,7 @@ First things first, we need a large dataset for our analysis. We’ll need data 
 
 I ended up using [Sportsbook Review](https://www.sportsbookreview.com/betting-odds/nba-basketball/), a site that aggregates historical betting odds from many different sportsbooks. From there, I found an open-source repository with a script that can effectively scrape betting data from any historical NBA game. [I modified the script](https://github.com/lambertchu/SBRscraper/pull/1) to also scrape the final score of each game and to run for an entire NBA season, which I did for three regular seasons: 2017–18, 2018–19, and 2019–20 (only including games before the pandemic suspended the season). Here’s a snapshot of what the dataset looks like:
 
-![](https://cdn-images-1.medium.com/max/800/0*qnXwAtaFI1CKFV5H)
+![](./SBR-data-preview.png)
 
 There are a lot of different ways to place bets on NBA games, like moneylines, point spreads, point totals, etc. For the sake of this post, I’ll focus exclusively on the profitability of moneylines. Similarly, there are many different sportsbooks you can use to bet. For the sake of simplicity, I will focus exclusively on [Pinnacle](https://www.pinnacle.com/en/), which is regarded as having some of the most accurate odds in the industry.
 
@@ -54,15 +55,15 @@ Next, I created “bins” so that all bets with similar implied win probabiliti
 
 Suppose we have a bet with an implied win probability of 11.7% (or +755 moneyline). It’s hard to find many other bets that have this exact moneyline. But if we include it in a bin of all bets from 10% to 15%, then we have quite a few data points to look at in each bin. We then calculate each bin’s _actual win rate_ (number of real-life wins divided by total number of games) and _expected win rate_ (average implied win probability of all bets in the bin).
 
-From there, we can take the difference between the actual win rates and expected win rates — which I’ll call the residual — and see if there are any large discrepancies. Here are the results when dividing all bets into 20 bins. Each bin covers an implied win probability interval of about 5 percentage points.
+From there, we can take the difference between the actual win rates and expected win rates — which I’ll call the residual — and see if there are any large discrepancies. Here are the results when dividing all bets into 20 bins. Each bin covers an implied win probability interval of about 5 percentage points.
 
-![](https://cdn-images-1.medium.com/max/800/0*2MGyOUFmnaA9PAqw)
+![](./win-rate-residuals.png)
 
 The _b_in column shows the probability interval in decimal form. The \_co_unt column shows the total number of bets in each bin. Notice that the counts are symmetric across the middle row, with the exception of the (\_0.456, 0.5\]_ interval having 12 games (24 bets) with exactly 50/50 odds.
 
 It turns out that the implied win probabilities (and therefore the moneylines) are pretty accurate! In general, the actual and expected win probabilities don’t differ by more than 5%. However, there is a slight negative correlation between residual and expected win rate. It appears that huge underdogs have been slightly underrated, while huge favorites have been slightly overrated.
 
-![](https://cdn-images-1.medium.com/max/800/0*1AMFKmwV23GuG1bU)
+![](./expected-win-prob-line-graph.png)
 
 ### Step 3: Simulating the strategies
 
@@ -72,7 +73,7 @@ I wrote a function that simulates a betting strategy and tracks our winnings ove
 
 We’re ready to go now. What happens if we run the simulation with a threshold of 0.5, which places a $100 bet on the underdog of every game?
 
-![](https://cdn-images-1.medium.com/max/800/0*-YM4-kHPWy7L3c1D)
+![](./simulation-with-threshold-0.5.png)
 
 Oh no, we lost money! **We lost** **$3,903** after three seasons, with an especially brutal stretch from bets 600 to 1,000.
 
@@ -80,13 +81,13 @@ It’s worth noting that the expected value of every bet is negative. As I menti
 
 Next, let’s try the _exact opposite_ strategy and bet on the _favorite_ of every game. After a tiny tweak to my simulator function, we get the following results over time:
 
-![](https://cdn-images-1.medium.com/max/800/0*_tyDuhYU6v1SU3Wn)
+![](./simulation-bet-on-favorite.png)
 
 What an absolute nightmare! With this strategy, **we** **lost $10,352**. Comparing this graph with the previous one, we can see that the trends move in opposite directions (as they should), but the winnings are completely outweighed by the magnitude of the losses.
 
 Finally, let’s test our hyped-up strategy of betting on huge underdogs. What happens if we run the simulation with a threshold of 0.2?
 
-![](https://cdn-images-1.medium.com/max/800/0*AVXbgiiiJP086a1w)
+![](./simulation-with-threshold-0.2.png)
 
 We make a **total profit of $7,182**!! Not bad at all!
 
