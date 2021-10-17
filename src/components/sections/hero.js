@@ -18,7 +18,7 @@ const StyledHeroSection = styled.section`
   }
 
   h1 {
-    margin: 0 0 30px 4px;
+    margin: 0 0 25px 4px;
     color: var(--green);
     font-family: var(--font-mono);
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
@@ -48,7 +48,6 @@ const StyledHeroSection = styled.section`
 
 const StyledPic = styled.div`
   position: relative;
-  max-width: 350px;
 
   @media (max-width: 768px) {
     margin: 50px auto 0;
@@ -125,9 +124,9 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Lambert Chu.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const one = <h2 className="big-heading">Lambert Chu</h2>;
+  const two = <h1>Welcome to my website!</h1>;
+  // const three = <h3 className="big-heading">Working in the metaverse.</h3>;
   const four = (
     <StyledPic>
       <div className="wrapper">
@@ -135,7 +134,7 @@ const Hero = () => {
           className="img"
           src="../../images/me-beach.jpg"
           width={500}
-          quality={95}
+          quality={100}
           formats={['AUTO', 'WEBP', 'AVIF']}
           alt="Headshot"
         />
@@ -143,7 +142,7 @@ const Hero = () => {
     </StyledPic>
   );
 
-  const items = [one, two, three, four];
+  const items = [one, two, four];
 
   return (
     <StyledHeroSection>

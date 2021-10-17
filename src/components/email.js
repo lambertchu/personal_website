@@ -33,12 +33,22 @@ const StyledLinkWrapper = styled.div`
       transform: translateY(-3px);
     }
   }
+
+  p {
+    margin: 20px auto;
+    padding: 10px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    line-height: var(--fz-lg);
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+  }
 `;
 
 const Email = ({ isHome }) => (
   <Side isHome={isHome} orientation="right">
     <StyledLinkWrapper>
-      <a href={`mailto:${email}`}>{email}</a>
+      <p>{email}</p>
     </StyledLinkWrapper>
   </Side>
 );

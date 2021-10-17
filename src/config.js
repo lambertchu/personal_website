@@ -1,4 +1,6 @@
 module.exports = {
+  email: 'lambertchu.eth',
+
   socialMedia: [
     {
       name: 'Twitter',

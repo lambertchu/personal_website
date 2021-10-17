@@ -124,7 +124,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['Python', 'pandas', 'scikit-learn', 'LightGBM', 'SQL', 'R'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -137,36 +137,37 @@ const About = () => {
               I was born and raised on Long Island, New York. I graduated from MIT in 2017 with
               degrees in computer science and management science. While I was there, I pitched on
               the varsity baseball team during my freshman year for a grand total of one inning (and
-              thankfully didn’t give up any runs). During my senior year, I co-founded Point with
-              two of my fraternity brothers. Our team built an NLP-powered product to help people
-              write emails faster. We were funded by investors like Y Combinator and Slow Ventures,
-              featured in Forbes, and reached #4 Product of the Day on Product Hunt. I subsequently
-              joined the front office of the New York Yankees as a member of the baseball operations
-              department. Now, I’m pursuing my interests in technology, business, and sports as a
-              data scientist for Lucky Trader, where we are building the sharpest analytics platform
-              for NFTs. So what do I write about on my personal blog? Anything that interests me! As
-              of now, expect to see content related to sports, technology, finance, and crypto. Feel
-              free to hit me up via DM on Twitter!
+              thankfully didn’t give up any runs).
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              During my senior year, I co-founded Point with two of my fraternity brothers. Our team
+              built an NLP-powered product to help people write emails faster. We were funded by
+              investors like Y Combinator and Slow Ventures, featured in{' '}
+              <a
+                href="https://www.forbes.com/sites/frederickdaso/2018/02/28/this-mit-and-harvard-startup-is-making-writing-e-mails-easier-and-effortless"
+                target="_blank" rel="noreferrer">
+                Forbes
+              </a>
+              , and reached #4 Product of the Day on{' '}
+              <a href="https://www.producthunt.com/posts/easyemail" target="_blank" rel="noreferrer">
+                Product Hunt.
+              </a>
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              I subsequently joined the front office of the New York Yankees as a member of the
+              baseball operations department. Now, I’m pursuing my interests in technology,
+              business, and sports as a data scientist for{' '}
+              <a href="https://luckytrader.com" target="_blank" rel="noreferrer">
+                Lucky Trader
+              </a>
+              , where we are building the sharpest analytics platform for NFTs.
+            </p>
+
+            <p>
+              So what do I write about on my personal blog? Anything that interests me! As of now,
+              expect to see content related to sports, technology, finance, and crypto.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
@@ -182,6 +183,20 @@ const About = () => {
             <StaticImage
               className="img"
               src="../../images/me-headshot.jpg"
+              width={500}
+              quality={95}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              alt="Headshot"
+            />
+          </div>
+
+          <br></br>
+          <br></br>
+
+          <div className="wrapper">
+            <StaticImage
+              className="img"
+              src="../../images/me-baseball.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
