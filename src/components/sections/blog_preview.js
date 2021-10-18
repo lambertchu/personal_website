@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
-import { srConfig, email } from '@config';
+import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -121,23 +121,23 @@ const BlogPreview = () => {
 
   return (
     <StyledBlogSection id="blog-preview" ref={revealContainer}>
-      <h2 className="numbered-heading overline">My Personal Blog</h2>
-
-      <h2 className="title">My Personal Blog</h2>
+      <h2 className="numbered-heading">My Blog Posts</h2>
 
       <StyledPic>
-        <div className="wrapper">
-          <StaticImage
-            className="img"
-            src="../../images/me-staples.jpg"
-            quality={100}
-            formats={['AUTO', 'WEBP', 'AVIF']}
-            alt="Headshot"
-          />
-        </div>
+        <a href="/blog">
+          <div className="wrapper">
+            <StaticImage
+              className="img"
+              src="../../images/blog-preview.png"
+              quality={100}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              alt="Headshot"
+            />
+          </div>
+        </a>
       </StyledPic>
 
-      <a className="email-link" href={`mailto:${email}`}>
+      <a className="email-link" href="/blog">
         See More
       </a>
     </StyledBlogSection>

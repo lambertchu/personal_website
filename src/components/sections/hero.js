@@ -67,11 +67,6 @@ const StyledPic = styled.div`
       background: transparent;
       outline: 0;
 
-      &:after {
-        top: 15px;
-        left: 15px;
-      }
-
       .img {
         filter: none;
         mix-blend-mode: normal;

@@ -63,11 +63,6 @@ const StyledPic = styled.div`
       background: transparent;
       outline: 0;
 
-      &:after {
-        top: 15px;
-        left: 15px;
-      }
-
       .img {
         filter: none;
         mix-blend-mode: normal;
@@ -121,9 +116,7 @@ const Contact = () => {
 
   return (
     <StyledContactSection id="contact" ref={revealContainer}>
-      <h2 className="numbered-heading overline">What’s Next?</h2>
-
-      <h2 className="title">Get In Touch</h2>
+      <h2 className="numbered-heading">Get In Touch</h2>
 
       <p>
         Although I’m not currently looking for any new opportunities, my inbox is always open.

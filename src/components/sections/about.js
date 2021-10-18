@@ -68,11 +68,6 @@ const StyledPic = styled.div`
       background: transparent;
       outline: 0;
 
-      &:after {
-        top: 15px;
-        left: 15px;
-      }
-
       .img {
         filter: none;
         mix-blend-mode: normal;
@@ -146,11 +141,15 @@ const About = () => {
               investors like Y Combinator and Slow Ventures, featured in{' '}
               <a
                 href="https://www.forbes.com/sites/frederickdaso/2018/02/28/this-mit-and-harvard-startup-is-making-writing-e-mails-easier-and-effortless"
-                target="_blank" rel="noreferrer">
+                target="_blank"
+                rel="noreferrer">
                 Forbes
               </a>
               , and reached #4 Product of the Day on{' '}
-              <a href="https://www.producthunt.com/posts/easyemail" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.producthunt.com/posts/easyemail"
+                target="_blank"
+                rel="noreferrer">
                 Product Hunt.
               </a>
             </p>

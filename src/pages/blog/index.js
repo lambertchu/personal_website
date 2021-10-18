@@ -154,7 +154,7 @@ const BlogPage = ({ location, data }) => {
           <h1 className="big-heading">Blog</h1>
           <p className="subtitle">
             <a href="https://www.wizardingworld.com/writing-by-jk-rowling/pensieve">
-              a collection of memories
+              How I think about things.
             </a>
           </p>
         </header>
