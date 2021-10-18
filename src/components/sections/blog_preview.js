@@ -64,13 +64,12 @@ const StyledPic = styled.div`
       outline: 0;
 
       &:after {
-        top: 15px;
-        left: 15px;
+        top: 10px;
+        left: 10px;
       }
 
       .img {
-        filter: none;
-        mix-blend-mode: normal;
+        filter: grayscale(100%) contrast(1);
       }
     }
 

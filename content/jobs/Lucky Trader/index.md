@@ -1,10 +1,10 @@
 ---
-date: '2018-05-14'
-title: 'Engineer'
-company: 'Upstatement'
-location: 'Boston, MA'
-range: 'May 2018 - Present'
-url: 'https://www.upstatement.com/'
+date: '2021-03-22'
+title: 'Data Scientist'
+company: 'Lucky Trader'
+location: 'Remote'
+range: 'March 2021 - Present'
+url: 'http://luckytrader.com'
 ---
 
 - Write modern, performant, maintainable code for a diverse array of client and internal projects
