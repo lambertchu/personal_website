@@ -7,12 +7,22 @@ import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledContactSection = styled.section`
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto 100px;
   text-align: center;
 
   @media (max-width: 768px) {
     margin: 0 auto 50px;
+  }
+
+  .inner {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 50px;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 
   .overline {
@@ -122,19 +132,38 @@ const Contact = () => {
 
       <p>If you'd like to contact me, pick a social media site and slide into my DMs:</p>
 
+      <br></br>
+
       <SocialHorizontal />
 
-      <StyledPic>
-        <div className="wrapper">
-          <StaticImage
-            className="img"
-            src="../../images/me-staples.jpg"
-            quality={100}
-            formats={['AUTO', 'WEBP', 'AVIF']}
-            alt="Headshot"
-          />
-        </div>
-      </StyledPic>
+      <br></br>
+      <br></br>
+
+      <div className="inner">
+        <StyledPic>
+          <div className="wrapper">
+            <StaticImage
+              className="img"
+              src="../../images/me-staples.jpg"
+              quality={100}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              alt="Headshot"
+            />
+          </div>
+        </StyledPic>
+
+        <StyledPic>
+          <div className="wrapper">
+            <StaticImage
+              className="img"
+              src="../../images/NFTs.png"
+              quality={100}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              alt="Headshot"
+            />
+          </div>
+        </StyledPic>
+      </div>
     </StyledContactSection>
   );
 };
