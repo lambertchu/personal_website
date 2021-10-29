@@ -153,9 +153,7 @@ const BlogPage = ({ location, data }) => {
         <header>
           <h1 className="big-heading">Blog</h1>
           <p className="subtitle">
-            <a href="https://www.wizardingworld.com/writing-by-jk-rowling/pensieve">
-              How I think about things.
-            </a>
+            <p>How I think about things.</p>
           </p>
         </header>
 
@@ -175,7 +173,9 @@ const BlogPage = ({ location, data }) => {
                         <GatsbyImage image={image} alt={title} className="img" />
                       </div>
                       <h5 className="post__title">
-                        <Link to={slug}>{title}</Link>
+                        <a href={slug} target="_blank" rel="noreferrer">
+                          {title}
+                        </a>
                       </h5>
                       <p className="post__desc">{description}</p>
                     </header>

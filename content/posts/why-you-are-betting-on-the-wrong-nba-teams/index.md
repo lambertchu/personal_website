@@ -5,7 +5,6 @@ draft: false
 slug: /blog/betting-nba
 cover: './giannis.jpg'
 tags:
-  - NBA
   - Sports Betting
   - Data Science
 ---

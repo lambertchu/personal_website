@@ -120,7 +120,7 @@ const BlogPreview = () => {
 
   return (
     <StyledBlogSection id="blog-preview" ref={revealContainer}>
-      <h2 className="numbered-heading">My Blog Posts</h2>
+      <h2 className="numbered-heading">Blog Posts</h2>
 
       <StyledPic>
         <a href="/blog">
