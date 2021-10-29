@@ -108,7 +108,7 @@ const Footer = () => {
         <div>Copyright: © Lambert Chu</div>
 
         <a href="https://github.com/bchiang7/v4" target="_blank" rel="noreferrer">
-          <div>Original website designed by Brittany Chiang</div>
+          <div>Original design built by Brittany Chiang</div>
 
           {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">
