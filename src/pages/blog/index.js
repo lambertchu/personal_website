@@ -152,9 +152,9 @@ const BlogPage = ({ location, data }) => {
       <StyledMainContainer>
         <header>
           <h1 className="big-heading">Blog</h1>
-          <p className="subtitle">
+          <h3 className="subtitle">
             <p>How I think about things.</p>
-          </p>
+          </h3>
         </header>
 
         <StyledGrid>
