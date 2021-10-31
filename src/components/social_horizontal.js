@@ -4,12 +4,11 @@ import { socialMedia } from '@config';
 import { Icon } from '@components/icons';
 
 const StyledSocialList = styled.ul`
+  list-style-type: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  list-style: none;
 
   li {
     a {
