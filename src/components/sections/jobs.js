@@ -22,6 +22,10 @@ const StyledJobsSection = styled.section`
       min-height: 340px;
     }
   }
+
+  a {
+    color: #1cf3ff;
+  }
 `;
 
 const StyledTabList = styled.div`
@@ -288,7 +292,7 @@ const Jobs = () => {
                       <span>{title}</span>
                       <span className="company">
                         &nbsp;@&nbsp;
-                        <a href={url} className="inline-link">
+                        <a href={url} target="_blank" className="inline-link" rel="noreferrer">
                           {company}
                         </a>
                       </span>
