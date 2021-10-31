@@ -1,7 +1,7 @@
 ---
 title: The future of NFTs is here - and it’s on the racetrack
-description: In this article, I’ll explain why it’s time for you to start paying attention to ZED RUN - and why I believe it will set the standard for NFTs of the future.
-date: 2021-06-27
+description: Why ZED RUN will set the standard for NFTs of the future.
+date: 2021-06-27 12:00:00
 draft: false
 slug: /blog/zed-future-nfts
 cover: './zed-future-of-nfts-thumbnail.png'

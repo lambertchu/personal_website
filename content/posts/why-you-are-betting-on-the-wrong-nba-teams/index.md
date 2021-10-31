@@ -1,6 +1,7 @@
 ---
 title: Why you are betting on the wrong NBA teams
-date: 2021-04-21
+description: Sometimes, it's the teams you least expect.
+date: 2021-04-21 12:00:00
 draft: false
 slug: /blog/betting-nba
 cover: './giannis.jpg'
