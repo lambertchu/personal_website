@@ -128,9 +128,9 @@ const About = () => {
           <div>
             <p>
               I was born and raised on Long Island, New York. I graduated from MIT in 2017 with
-              degrees in computer science and management science. While I was there, I pitched on
-              the varsity baseball team during my freshman year for a grand total of one inning (and
-              thankfully didn’t give up any runs).
+              degrees in computer science and management science. During my freshman year, I pitched
+              on the varsity baseball team for a grand total of one inning (and thankfully didn’t
+              give up any runs).
             </p>
 
             <p>
@@ -155,13 +155,13 @@ const About = () => {
             </p>
 
             <p>
-              I subsequently joined the front office of the New York Yankees as a member of the
-              baseball operations department. Now, I’m pursuing my interests in technology,
-              business, and sports as a data scientist for{' '}
+              I then joined the front office of the New York Yankees as a member of the baseball
+              operations department. Now, I’m pursuing my interests in technology, business, and
+              sports as a data scientist for{' '}
               <a href="https://luckytrader.com" target="_blank" rel="noreferrer">
                 Lucky Trader
               </a>
-              , where we are building the sharpest analytics platform for NFTs.
+              , where we are building an analytics and educational platform for NFTs.
             </p>
 
             <p>
