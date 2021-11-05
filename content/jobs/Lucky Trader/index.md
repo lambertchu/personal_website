@@ -8,4 +8,4 @@ url: 'http://luckytrader.com'
 ---
 
 - Building analytics tools, including an NFT pricing model and NFT rarity score calculator.
-- Providing data science insights for [Know Your Horses](https://knowyourhorses.com). Researching optimal strategies to play [ZED RUN](https://zed.run).
+- Providing data science insights for [Know Your Horses](https://knowyourhorses.com). Researching strategies to play [ZED RUN](https://zed.run) for the company's stable. Sharing insights via blog posts and Twitter.
