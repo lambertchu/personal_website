@@ -173,9 +173,7 @@ const BlogPage = ({ location, data }) => {
                         <GatsbyImage image={image} alt={title} className="img" />
                       </div>
                       <h5 className="post__title">
-                        <a href={slug} target="_blank" rel="noreferrer">
-                          {title}
-                        </a>
+                        <Link to={slug}>{title}</Link>
                       </h5>
                       <p className="post__desc">{description}</p>
                     </header>

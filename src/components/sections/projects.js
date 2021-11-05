@@ -8,6 +8,7 @@ import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledProjectsSection = styled.section`
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -241,7 +242,9 @@ const Projects = () => {
 
   return (
     <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Projects</h2>
+      <h2 className="numbered-heading" ref={revealTitle}>
+        Other Projects
+      </h2>
 
       <Link className="inline-link archive-link" to="/projects" ref={revealArchiveLink}>
         view the complete list

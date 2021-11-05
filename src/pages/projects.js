@@ -10,7 +10,11 @@ import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledTableContainer = styled.div`
-  margin: 100px -20px;
+  header {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
   @media (max-width: 768px) {
     margin: 50px -10px;
   }
@@ -131,12 +135,12 @@ const ArchivePage = ({ location, data }) => {
       <Helmet title="Projects" />
 
       <main>
-        <header ref={revealTitle}>
-          <h1 className="big-heading">Projects</h1>
-          <p className="subtitle">A list of other things I've worked on</p>
-        </header>
-
         <StyledTableContainer ref={revealTable}>
+          <header ref={revealTitle}>
+            <h1 className="big-heading">Projects</h1>
+            <p className="subtitle">What I've worked on.</p>
+          </header>
+
           <table>
             <thead>
               <tr>

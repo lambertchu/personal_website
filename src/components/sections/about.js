@@ -119,8 +119,6 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'pandas', 'scikit-learn', 'LightGBM', 'SQL', 'R'];
-
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
       <h2 className="numbered-heading">About Me</h2>
@@ -142,14 +140,16 @@ const About = () => {
               <a
                 href="https://www.forbes.com/sites/frederickdaso/2018/02/28/this-mit-and-harvard-startup-is-making-writing-e-mails-easier-and-effortless"
                 target="_blank"
-                rel="noreferrer">
+                rel="noreferrer"
+              >
                 Forbes
               </a>
               , and reached #4 Product of the Day on{' '}
               <a
                 href="https://www.producthunt.com/posts/easyemail"
                 target="_blank"
-                rel="noreferrer">
+                rel="noreferrer"
+              >
                 Product Hunt.
               </a>
             </p>
@@ -168,13 +168,7 @@ const About = () => {
               So what do I write about on my personal blog? Anything that interests me! As of now,
               expect to see content related to sports, technology, finance, and crypto.
             </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
-
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
         </StyledText>
 
         <StyledPic>
