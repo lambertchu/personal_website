@@ -1,5 +1,8 @@
 const config = require('./src/config');
 
+// const siteAddress = new URL(process.env.TARGET_ADDRESS || `http://lambertchu.local`);
+const siteAddress = new URL(`https://lambertchu.com`);
+
 module.exports = {
   siteMetadata: {
     title: 'Lambert Chu',
@@ -152,6 +155,22 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-169011330-1',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'lambert-personal-website',
+        region: 'us-east-2',
+        protocol: siteAddress.protocol.slice(0, -1),
+        hostname: siteAddress.hostname,
+        acl: null,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: siteAddress.href.slice(0, -1),
       },
     },
   ],

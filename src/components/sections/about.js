@@ -126,11 +126,11 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
+            <p>Why don't we start from the beginning?</p>
             <p>
-              I was born and raised on Long Island, New York. I graduated from MIT in 2017 with
-              degrees in computer science and management science. During my freshman year, I pitched
-              on the varsity baseball team for a grand total of one inning (and thankfully didn’t
-              give up any runs).
+              I was born and raised on Long Island, New York. I studied computer science and
+              management science at MIT. During my freshman year, I pitched on the varsity baseball
+              team for a grand total of one inning (and thankfully didn’t give up any runs!)
             </p>
 
             <p>
@@ -157,16 +157,16 @@ const About = () => {
             <p>
               I then joined the front office of the New York Yankees as a member of the baseball
               operations department. Now, I’m pursuing my interests in technology, business, and
-              sports as a data scientist for{' '}
-              <a href="https://luckytrader.com" target="_blank" rel="noreferrer">
-                Lucky Trader
+              sports as a software engineer for{' '}
+              <a href="https://deca.art" target="_blank" rel="noreferrer">
+                Deca
               </a>
-              , where we are building an analytics and educational platform for NFTs.
+              , where we are building a social network for NFTs.
             </p>
 
             <p>
-              So what do I write about on my personal blog? Anything that interests me! As of now,
-              expect to see content related to sports, technology, finance, and crypto.
+              So what do I write about on here? Anything that interests me! As of now, expect to see
+              content related to sports, technology, finance, and crypto.
             </p>
           </div>
         </StyledText>
