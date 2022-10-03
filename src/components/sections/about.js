@@ -126,11 +126,12 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Why don't we start from the beginning?</p>
+            <p>Why don&lsquo;t we start from the beginning?</p>
             <p>
               I was born and raised on Long Island, New York. I studied computer science and
               management science at MIT. During my freshman year, I pitched on the varsity baseball
-              team for a grand total of one inning (and thankfully didn’t give up any runs!)
+              team for a grand total of one inning (and thankfully didn&lsquo;t give up any runs
+              😮‍💨)
             </p>
 
             <p>
@@ -156,12 +157,13 @@ const About = () => {
 
             <p>
               I then joined the front office of the New York Yankees as a member of the baseball
-              operations department. Now, I’m pursuing my interests in technology, business, and
-              sports as a software engineer for{' '}
+              operations department. Now, I&lsquo;m pursuing my interests in technology, crypto, and
+              decentralized governance as a software engineer for{' '}
               <a href="https://deca.art" target="_blank" rel="noreferrer">
                 Deca
               </a>
-              , where we are building a social network for NFTs.
+              , where we&lsquo;re building a platform for NFT art and a social network for NFT
+              enthusiasts.
             </p>
 
             <p>
@@ -183,8 +185,8 @@ const About = () => {
             />
           </div>
 
-          <br></br>
-          <br></br>
+          <br />
+          <br />
 
           <div className="wrapper">
             <StaticImage
