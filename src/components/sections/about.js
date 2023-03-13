@@ -97,19 +97,21 @@ const About = () => {
             </p>
 
             <p>
-              I then joined the front office of the New York Yankees as a member of the baseball
-              operations department. Now, I&lsquo;m pursuing my interests in technology, crypto, and
-              decentralized governance as a software engineer for{' '}
-              <a href="https://deca.art" target="_blank" rel="noreferrer">
-                Deca
+              Since then, I have pursued my interests in technology, markets, sports, and web3. I
+              worked in the front office of the New York Yankees as a member of the baseball
+              operations department. I was an early core employee at startups Lucky Trader and Deca,
+              where I helped analyze, design, and build NFT-based web3 games. I&lsquo;m also a
+              member of the{' '}
+              <a href="https://www.orangedao.xyz" target="_blank" rel="noreferrer">
+                Orange DAO
               </a>
-              , where we&lsquo;re building a platform for NFT art and a social network for NFT
-              enthusiasts.
+              , a decentralized organization of YC founders advancing web3 through investing in and
+              supporting founders.
             </p>
 
             <p>
-              So what do I write about on here? Anything that interests me! As of now, expect to see
-              content related to sports, technology, finance, and crypto.
+              So what do I write about on here? Anything that interests me! Expect to see content
+              about my latest passion projects.
             </p>
           </div>
         </StyledText>
