@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { StyledPic } from '../picture';
 
 const StyledBlogSection = styled.section`
   max-width: 800px;
@@ -39,70 +40,6 @@ const StyledBlogSection = styled.section`
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
-  }
-`;
-
-const StyledPic = styled.div`
-  position: relative;
-
-  @media (max-width: 768px) {
-    margin: 50px auto 0;
-    width: 70%;
-  }
-
-  .wrapper {
-    ${({ theme }) => theme.mixins.boxShadow};
-    display: block;
-    position: relative;
-    width: 100%;
-    border-radius: var(--border-radius);
-    background-color: var(--green);
-
-    &:hover,
-    &:focus {
-      background: transparent;
-      outline: 0;
-
-      &:after {
-        top: 10px;
-        left: 10px;
-      }
-
-      .img {
-        filter: grayscale(100%) contrast(1);
-      }
-    }
-
-    .img {
-      position: relative;
-      border-radius: var(--border-radius);
-      transition: var(--transition);
-    }
-
-    &:before,
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: var(--border-radius);
-      transition: var(--transition);
-    }
-
-    &:before {
-      top: 0;
-      left: 0;
-      background-color: var(--navy);
-      mix-blend-mode: screen;
-    }
-
-    &:after {
-      border: 2px solid var(--green);
-      top: 20px;
-      left: 20px;
-      z-index: -1;
-    }
   }
 `;
 
