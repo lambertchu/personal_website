@@ -9,8 +9,6 @@
   Built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted on <a href="https://aws.amazon.com" target="_blank">AWS</a>
 </p>
 
-![demo](./src/images/demo.png)
-
 ## 🚨 Forking this repo
 
 Yes, you can fork this repo. Please give proper credit to Brittany Chiang for her awesome work building the original website by linking back to [brittanychiang.com](https://brittanychiang.com). Please link back to [lambertchu.com](https://lambertchu.com) as well. Thanks!
