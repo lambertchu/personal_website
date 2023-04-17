@@ -1,6 +1,6 @@
 ---
 date: '2021-03-21'
-title: 'Software Engineering Consultant'
+title: 'Software Engineering Contractor'
 company: 'Surge AI'
 location: 'New York, NY'
 range: 'February - March 2021'
