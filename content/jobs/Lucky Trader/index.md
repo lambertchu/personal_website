@@ -7,6 +7,7 @@ range: 'March - December 2021'
 url: 'http://luckytrader.com'
 ---
 
-- Built analytics tools for the product, including realtime NFT pricing and rarity score models, using Python, pandas, XGBoost, and scikit-learn.
+- Built analytics tools for the product, including pricing models for NFT collections such as NBA Top Shot, Bored Ape Yacht Club, and CryptoPunks.
+- Developed a rarity score calculation method for all trait-based NFT collections.
 - Provided data insights for knowyourhorses.com and gameplay strategies for their zed.run stable, assisting the company and other gamers to become more profitable.
-- Published blog posts describing data science methodologies, which were amongst the most popular articles on the website.
+- Published blog posts describing data science methodologies, which became some of the most popular articles on the website.

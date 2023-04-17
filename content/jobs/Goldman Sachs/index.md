@@ -7,5 +7,5 @@ range: 'June - August 2016'
 url: https://www.goldmansachs.com
 ---
 
-- Designed and implemented a more efficient reporting system for the firm’s prime brokerage business.
-- Presented completed system to Managing Directors of the firm.
+- Helped develop internal reporting system using Slang and SecDB. Reported results to panel of managing directors at the end of the internship.
+- Received full-time job offers in technology and investment banking strats (quant).
