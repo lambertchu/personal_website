@@ -97,7 +97,7 @@ const Contact = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/more-kitties2.png"
+              src="../../images/more-kitties.png"
               quality={100}
               formats={['AUTO', 'WEBP', 'AVIF']}
               alt="Cats"
