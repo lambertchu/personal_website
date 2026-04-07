@@ -7,4 +7,5 @@ range: 'May 2025 - Present'
 url: 'https://www.meta.com'
 ---
 
-- Instagram CoreML team
+- Instagram Core Modeling (CoreML) team.
+- Advancing model architecture for large-scale deep learning recommendation models.
