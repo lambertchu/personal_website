@@ -49,10 +49,16 @@ Yes, you can fork this repo. Please give proper credit to Brittany Chiang for he
    npm run build
    ```
 
-1. Preview the site as it will appear once deployed
+2. Preview the site as it will appear once deployed
 
    ```sh
    npm run serve
+   ```
+
+3. Publish to AWS S3 bucket
+
+   ```sh
+   aws s3 sync public/ s3://lambert-personal-website --delete
    ```
 
 ## 🎨 Color Reference

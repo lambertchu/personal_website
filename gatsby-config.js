@@ -17,6 +17,14 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'lambert-personal-website',
+        protocol: 'https',
+        hostname: 'lambertchu.com',
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'LambertChu',
@@ -28,7 +36,6 @@ module.exports = {
         icon: 'src/images/logo.png',
       },
     },
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
